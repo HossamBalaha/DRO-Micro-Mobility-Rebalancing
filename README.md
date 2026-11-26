@@ -26,9 +26,10 @@ Companion code & raw experimental artifacts for the AIMS Mathematics manuscript:
 7. [Usage](#7-usage)
 8. [Results & Artifacts](#8-results--artifacts)
 9. [Runtime Envelope](#9-runtime-envelope)
-10. [Citation](#10-citation)
-11. [License](#11-license)
-12. [Support & Contact](#12-support--contact)
+10. [Data Sources (Open)](#10-data-sources-open)
+11. [Citation](#11-citation)
+12. [License](#12-license)
+13. [Support & Contact](#13-support--contact)
 
 ---
 
