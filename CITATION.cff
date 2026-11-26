@@ -1,0 +1,29 @@
+cff-version: 1.2.0
+message: >-
+  If you use this pipeline or these artifacts, please cite the manuscript
+  "Distributionally Robust Optimization for Depot-Augmented Bike-Share
+  Rebalancing under Demand Uncertainty" (AIMS Mathematics, Math-32297,
+  under review).
+title: >-
+  Distributionally Robust Optimization for Depot-Augmented Bike-Share
+  Rebalancing under Demand Uncertainty
+type: unpublished
+authors:
+  - family-names: Alfahaid
+    given-names: Abdullah
+  - family-names: Almars
+    given-names: Abdulqader M.
+  - family-names: Abd El-Mawla
+    given-names: Nesma
+  - family-names: Balaha
+    given-names: Hossam Magdy
+  - family-names: Badawy
+    given-names: Mahmoud
+  - family-names: Elhosseini
+    given-names: Mostafa A.
+keywords:
+  - bike-sharing
+  - rebalancing
+  - distributionally robust optimization
+  - conditional value-at-risk
+  - two-stage stochastic programming

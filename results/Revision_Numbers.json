@@ -1,0 +1,837 @@
+{
+  "BootstrapResamples": 2000,
+  "UnmetPenalty": 12.5,
+  "YearMonthTag": "202501-202612",
+  "NumberOfRuns": 5,
+  "Cities": {
+    "Divvy": {
+      "PooledObservations": 9000,
+      "PooledObservationsBeforeZeroDemandFilter": 9000,
+      "ClusterCount": 18,
+      "DemandBearingClusters": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ],
+      "Summary": [
+        {
+          "Method": "EV",
+          "PooledMeanCost": 47499.478472222225,
+          "PooledStdCost": 36733.03161520717,
+          "PooledMedianCost": 33862.149999999994,
+          "AcrossRunMeanOfRunMeans": 47499.478472222225,
+          "AcrossRunStdOfRunMeans": 46.34189732979805,
+          "ClusterBootstrapCi95Lower": 31291.381495370373,
+          "ClusterBootstrapCi95Upper": 64693.916087962956
+        },
+        {
+          "Method": "SAA",
+          "PooledMeanCost": 47027.00277777778,
+          "PooledStdCost": 36286.68543245367,
+          "PooledMedianCost": 32686.5,
+          "AcrossRunMeanOfRunMeans": 47027.00277777778,
+          "AcrossRunStdOfRunMeans": 45.27979865121851,
+          "ClusterBootstrapCi95Lower": 31105.94253472222,
+          "ClusterBootstrapCi95Upper": 64722.33479166665
+        },
+        {
+          "Method": "DRO",
+          "PooledMeanCost": 46949.1168635829,
+          "PooledStdCost": 36216.39595790925,
+          "PooledMedianCost": 32230.6875,
+          "AcrossRunMeanOfRunMeans": 46949.1168635829,
+          "AcrossRunStdOfRunMeans": 34.72395985318737,
+          "ClusterBootstrapCi95Lower": 31144.391056030596,
+          "ClusterBootstrapCi95Upper": 64470.98259949597
+        }
+      ],
+      "Comparative": [
+        {
+          "Comparison": "DRO_vs_EV",
+          "PooledMeanReductionPercent": 1.1586687398287332,
+          "ReductionCi95Lower": 0.09242333288152348,
+          "ReductionCi95Upper": 2.1716264462752686,
+          "ClusterWilcoxonP": 0.03684234619140625,
+          "ClusterCohenR": 0.42599406642445076,
+          "ClusterZ": 1.80733975868377,
+          "ClusterN": 18,
+          "ClustersDroCheaper": 13,
+          "ClustersTotal": 18
+        },
+        {
+          "Comparison": "DRO_vs_SAA",
+          "PooledMeanReductionPercent": 0.1656195581141269,
+          "ReductionCi95Lower": -0.14926159730389676,
+          "ReductionCi95Upper": 0.4516304232698605,
+          "ClusterWilcoxonP": 0.22114944458007812,
+          "ClusterCohenR": 0.1899009693699359,
+          "ClusterZ": 0.805681579172283,
+          "ClusterN": 18,
+          "ClustersDroCheaper": 9,
+          "ClustersTotal": 18
+        }
+      ],
+      "PerRunClusterTests": [
+        {
+          "Run": 1,
+          "Comparison": "DRO_vs_EV",
+          "ClusterWilcoxonP": 0.04488372802734375,
+          "ClusterCohenR": 0.4054642318979712,
+          "ClusterZ": 1.7202390474219016,
+          "ClusterN": 18,
+          "ClustersDroCheaper": 13,
+          "ClustersTotal": 18
+        },
+        {
+          "Run": 1,
+          "Comparison": "DRO_vs_SAA",
+          "ClusterWilcoxonP": 0.22114944458007812,
+          "ClusterCohenR": 0.1899009693699359,
+          "ClusterZ": 0.805681579172283,
+          "ClusterN": 18,
+          "ClustersDroCheaper": 11,
+          "ClustersTotal": 18
+        },
+        {
+          "Run": 2,
+          "Comparison": "DRO_vs_EV",
+          "ClusterWilcoxonP": 0.040714263916015625,
+          "ClusterCohenR": 0.415729149161211,
+          "ClusterZ": 1.7637894030528358,
+          "ClusterN": 18,
+          "ClustersDroCheaper": 13,
+          "ClustersTotal": 18
+        },
+        {
+          "Run": 2,
+          "Comparison": "DRO_vs_SAA",
+          "ClusterWilcoxonP": 0.2754364013671875,
+          "ClusterCohenR": 0.1488413003169768,
+          "ClusterZ": 0.6314801566485462,
+          "ClusterN": 18,
+          "ClustersDroCheaper": 11,
+          "ClustersTotal": 18
+        },
+        {
+          "Run": 3,
+          "Comparison": "DRO_vs_EV",
+          "ClusterWilcoxonP": 0.03684234619140625,
+          "ClusterCohenR": 0.42599406642445076,
+          "ClusterZ": 1.80733975868377,
+          "ClusterN": 18,
+          "ClustersDroCheaper": 13,
+          "ClustersTotal": 18
+        },
+        {
+          "Run": 3,
+          "Comparison": "DRO_vs_SAA",
+          "ClusterWilcoxonP": 0.16236495971679688,
+          "ClusterCohenR": 0.24122555568613477,
+          "ClusterZ": 1.023433357326954,
+          "ClusterN": 18,
+          "ClustersDroCheaper": 10,
+          "ClustersTotal": 18
+        },
+        {
+          "Run": 4,
+          "Comparison": "DRO_vs_EV",
+          "ClusterWilcoxonP": 0.02996826171875,
+          "ClusterCohenR": 0.4465239009509303,
+          "ClusterZ": 1.8944404699456385,
+          "ClusterN": 18,
+          "ClustersDroCheaper": 13,
+          "ClustersTotal": 18
+        },
+        {
+          "Run": 4,
+          "Comparison": "DRO_vs_SAA",
+          "ClusterWilcoxonP": 0.19636917114257812,
+          "ClusterCohenR": 0.21043080389641544,
+          "ClusterZ": 0.8927822904341515,
+          "ClusterN": 18,
+          "ClustersDroCheaper": 11,
+          "ClustersTotal": 18
+        },
+        {
+          "Run": 5,
+          "Comparison": "DRO_vs_EV",
+          "ClusterWilcoxonP": 0.04936981201171875,
+          "ClusterCohenR": 0.3951993146347314,
+          "ClusterZ": 1.6766886917909674,
+          "ClusterN": 18,
+          "ClustersDroCheaper": 11,
+          "ClustersTotal": 18
+        },
+        {
+          "Run": 5,
+          "Comparison": "DRO_vs_SAA",
+          "ClusterWilcoxonP": 0.19636917114257812,
+          "ClusterCohenR": 0.21043080389641544,
+          "ClusterZ": 0.8927822904341515,
+          "ClusterN": 18,
+          "ClustersDroCheaper": 9,
+          "ClustersTotal": 18
+        }
+      ],
+      "PerRunMeans": {
+        "EV": [
+          47475.65462962964,
+          47432.771527777775,
+          47506.51736111111,
+          47545.57754629629,
+          47536.871296296296
+        ],
+        "SAA": [
+          46983.02777777778,
+          46980.52777777778,
+          47027.15277777778,
+          47068.26388888889,
+          47076.041666666664
+        ],
+        "DRO": [
+          46944.58859901568,
+          46908.20222367402,
+          46923.934920634914,
+          46983.96247619516,
+          46984.896098394725
+        ]
+      },
+      "Audit": [
+        {
+          "Metric": "PooledObservationsBeforeZeroDemandFilter",
+          "Value": 9000.0
+        },
+        {
+          "Metric": "ExcludedZeroDemandClusters",
+          "Value": "None"
+        },
+        {
+          "Metric": "PooledObservationsAfterZeroDemandFilter",
+          "Value": 9000.0
+        },
+        {
+          "Metric": "PostRebalancingInventoryMinimum",
+          "Value": 0.0
+        },
+        {
+          "Metric": "WorstCapacityUtilizationRatio",
+          "Value": 58.714285714285715
+        },
+        {
+          "Metric": "MeanDepotSourcedVehicles_EV",
+          "Value": 7710.972592592592
+        },
+        {
+          "Metric": "MeanUnmetCostSharePercent_EV",
+          "Value": 35.064776936265815
+        },
+        {
+          "Metric": "MeanFirstStageCostSharePercent_EV",
+          "Value": 64.9352230637342
+        },
+        {
+          "Metric": "MeanUnmetVehiclesPerScenario_EV",
+          "Value": 1332.447048148148
+        },
+        {
+          "Metric": "MeanDepotSourcedVehicles_SAA",
+          "Value": 7929.833333333333
+        },
+        {
+          "Metric": "MeanUnmetCostSharePercent_SAA",
+          "Value": 32.55081606020594
+        },
+        {
+          "Metric": "MeanFirstStageCostSharePercent_SAA",
+          "Value": 67.44918393979405
+        },
+        {
+          "Metric": "MeanUnmetVehiclesPerScenario_SAA",
+          "Value": 1224.6135555555554
+        },
+        {
+          "Metric": "MeanDepotSourcedVehicles_DRO",
+          "Value": 8013.208121437068
+        },
+        {
+          "Metric": "MeanUnmetCostSharePercent_DRO",
+          "Value": 31.72857225500626
+        },
+        {
+          "Metric": "MeanFirstStageCostSharePercent_DRO",
+          "Value": 68.27142774499374
+        },
+        {
+          "Metric": "MeanUnmetVehiclesPerScenario_DRO",
+          "Value": 1191.70275022677
+        }
+      ],
+      "WassersteinShiftIndex": 2616.7200740740745,
+      "NormalizedL1ShiftIndex": 0.2763006003264284
+    },
+    "JC": {
+      "PooledObservations": 3500,
+      "PooledObservationsBeforeZeroDemandFilter": 5000,
+      "ClusterCount": 7,
+      "DemandBearingClusters": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "Summary": [
+        {
+          "Method": "EV",
+          "PooledMeanCost": 24031.126828981407,
+          "PooledStdCost": 17171.65907346495,
+          "PooledMedianCost": 24619.116666666665,
+          "AcrossRunMeanOfRunMeans": 24031.126828981407,
+          "AcrossRunStdOfRunMeans": 58.81781556509595,
+          "ClusterBootstrapCi95Lower": 12083.00701381981,
+          "ClusterBootstrapCi95Upper": 36939.60829850226
+        },
+        {
+          "Method": "SAA",
+          "PooledMeanCost": 23837.889177731387,
+          "PooledStdCost": 17065.273129636607,
+          "PooledMedianCost": 24550.75,
+          "AcrossRunMeanOfRunMeans": 23837.889177731384,
+          "AcrossRunStdOfRunMeans": 60.39790810893085,
+          "ClusterBootstrapCi95Lower": 11820.215596276505,
+          "ClusterBootstrapCi95Upper": 36583.87904578159
+        },
+        {
+          "Method": "DRO",
+          "PooledMeanCost": 23778.053617132042,
+          "PooledStdCost": 17040.468542816307,
+          "PooledMedianCost": 24517.0,
+          "AcrossRunMeanOfRunMeans": 23778.05361713204,
+          "AcrossRunStdOfRunMeans": 69.02608394812506,
+          "ClusterBootstrapCi95Lower": 11780.534950379111,
+          "ClusterBootstrapCi95Upper": 36718.88701882005
+        }
+      ],
+      "Comparative": [
+        {
+          "Comparison": "DRO_vs_EV",
+          "PooledMeanReductionPercent": 1.0531058890844889,
+          "ReductionCi95Lower": 0.6868225162347386,
+          "ReductionCi95Upper": 1.7046082663305824,
+          "ClusterWilcoxonP": 0.0078125,
+          "ClusterCohenR": 0.8944271909999159,
+          "ClusterZ": 2.3664319132398464,
+          "ClusterN": 7,
+          "ClustersDroCheaper": 7,
+          "ClustersTotal": 7
+        },
+        {
+          "Comparison": "DRO_vs_SAA",
+          "PooledMeanReductionPercent": 0.25101031451745165,
+          "ReductionCi95Lower": 0.13022613434011615,
+          "ReductionCi95Upper": 0.4957737471077865,
+          "ClusterWilcoxonP": 0.0078125,
+          "ClusterCohenR": 0.8944271909999159,
+          "ClusterZ": 2.3664319132398464,
+          "ClusterN": 7,
+          "ClustersDroCheaper": 7,
+          "ClustersTotal": 7
+        }
+      ],
+      "PerRunClusterTests": [
+        {
+          "Run": 1,
+          "Comparison": "DRO_vs_EV",
+          "ClusterWilcoxonP": 0.0078125,
+          "ClusterCohenR": 0.8944271909999159,
+          "ClusterZ": 2.3664319132398464,
+          "ClusterN": 7,
+          "ClustersDroCheaper": 7,
+          "ClustersTotal": 7
+        },
+        {
+          "Run": 1,
+          "Comparison": "DRO_vs_SAA",
+          "ClusterWilcoxonP": 0.0546875,
+          "ClusterCohenR": 0.6388765649999398,
+          "ClusterZ": 1.6903085094570331,
+          "ClusterN": 7,
+          "ClustersDroCheaper": 6,
+          "ClustersTotal": 7
+        },
+        {
+          "Run": 2,
+          "Comparison": "DRO_vs_EV",
+          "ClusterWilcoxonP": 0.0078125,
+          "ClusterCohenR": 0.8944271909999159,
+          "ClusterZ": 2.3664319132398464,
+          "ClusterN": 7,
+          "ClustersDroCheaper": 7,
+          "ClustersTotal": 7
+        },
+        {
+          "Run": 2,
+          "Comparison": "DRO_vs_SAA",
+          "ClusterWilcoxonP": 0.234375,
+          "ClusterCohenR": 0.3194382824999699,
+          "ClusterZ": 0.8451542547285166,
+          "ClusterN": 7,
+          "ClustersDroCheaper": 4,
+          "ClustersTotal": 7
+        },
+        {
+          "Run": 3,
+          "Comparison": "DRO_vs_EV",
+          "ClusterWilcoxonP": 0.0390625,
+          "ClusterCohenR": 0.7027642214999339,
+          "ClusterZ": 1.8593393604027364,
+          "ClusterN": 7,
+          "ClustersDroCheaper": 6,
+          "ClustersTotal": 7
+        },
+        {
+          "Run": 3,
+          "Comparison": "DRO_vs_SAA",
+          "ClusterWilcoxonP": 0.1484375,
+          "ClusterCohenR": 0.4472135954999579,
+          "ClusterZ": 1.1832159566199232,
+          "ClusterN": 7,
+          "ClustersDroCheaper": 5,
+          "ClustersTotal": 7
+        },
+        {
+          "Run": 4,
+          "Comparison": "DRO_vs_EV",
+          "ClusterWilcoxonP": 0.0078125,
+          "ClusterCohenR": 0.8944271909999159,
+          "ClusterZ": 2.3664319132398464,
+          "ClusterN": 7,
+          "ClustersDroCheaper": 7,
+          "ClustersTotal": 7
+        },
+        {
+          "Run": 4,
+          "Comparison": "DRO_vs_SAA",
+          "ClusterWilcoxonP": 0.7109375,
+          "ClusterCohenR": 0.19166296949998196,
+          "ClusterZ": -0.50709255283711,
+          "ClusterN": 7,
+          "ClustersDroCheaper": 3,
+          "ClustersTotal": 7
+        },
+        {
+          "Run": 5,
+          "Comparison": "DRO_vs_EV",
+          "ClusterWilcoxonP": 0.0078125,
+          "ClusterCohenR": 0.8944271909999159,
+          "ClusterZ": 2.3664319132398464,
+          "ClusterN": 7,
+          "ClustersDroCheaper": 7,
+          "ClustersTotal": 7
+        },
+        {
+          "Run": 5,
+          "Comparison": "DRO_vs_SAA",
+          "ClusterWilcoxonP": 0.0390625,
+          "ClusterCohenR": 0.7027642214999339,
+          "ClusterZ": 1.8593393604027364,
+          "ClusterN": 7,
+          "ClustersDroCheaper": 5,
+          "ClustersTotal": 7
+        }
+      ],
+      "PerRunMeans": {
+        "EV": [
+          24045.45304294847,
+          24052.333834863868,
+          24110.204256981546,
+          23960.365571664715,
+          23987.27743844843
+        ],
+        "SAA": [
+          23829.67207185135,
+          23863.62407355101,
+          23927.689901481437,
+          23779.81280375328,
+          23788.647038019844
+        ],
+        "DRO": [
+          23742.7494547126,
+          23760.57425562866,
+          23891.91247028307,
+          23784.105245604263,
+          23710.9266594316
+        ]
+      },
+      "Audit": [
+        {
+          "Metric": "PooledObservationsBeforeZeroDemandFilter",
+          "Value": 5000.0
+        },
+        {
+          "Metric": "ExcludedZeroDemandClusters",
+          "Value": "8, 9, 10"
+        },
+        {
+          "Metric": "PooledObservationsAfterZeroDemandFilter",
+          "Value": 3500.0
+        },
+        {
+          "Metric": "PostRebalancingInventoryMinimum",
+          "Value": -3.0375701953744283e-13
+        },
+        {
+          "Metric": "WorstCapacityUtilizationRatio",
+          "Value": 51.8
+        },
+        {
+          "Metric": "MeanDepotSourcedVehicles_EV",
+          "Value": 3495.0453333333335
+        },
+        {
+          "Metric": "MeanUnmetCostSharePercent_EV",
+          "Value": 16.84691746213108
+        },
+        {
+          "Metric": "MeanFirstStageCostSharePercent_EV",
+          "Value": 83.15308253786891
+        },
+        {
+          "Metric": "MeanUnmetVehiclesPerScenario_EV",
+          "Value": 323.8868476190476
+        },
+        {
+          "Metric": "MeanDepotSourcedVehicles_SAA",
+          "Value": 3579.12
+        },
+        {
+          "Metric": "MeanUnmetCostSharePercent_SAA",
+          "Value": 14.146928288553514
+        },
+        {
+          "Metric": "MeanFirstStageCostSharePercent_SAA",
+          "Value": 85.85307171144649
+        },
+        {
+          "Metric": "MeanUnmetVehiclesPerScenario_SAA",
+          "Value": 269.79342857142854
+        },
+        {
+          "Metric": "MeanDepotSourcedVehicles_DRO",
+          "Value": 3622.1133333333337
+        },
+        {
+          "Metric": "MeanUnmetCostSharePercent_DRO",
+          "Value": 12.893835352098796
+        },
+        {
+          "Metric": "MeanFirstStageCostSharePercent_DRO",
+          "Value": 87.10616464790121
+        },
+        {
+          "Metric": "MeanUnmetVehiclesPerScenario_DRO",
+          "Value": 245.29112034632044
+        }
+      ],
+      "WassersteinShiftIndex": 641.0039047619047,
+      "NormalizedL1ShiftIndex": 0.1348134259436464
+    },
+    "CitibikeNYC": {
+      "PooledObservations": 9000,
+      "PooledObservationsBeforeZeroDemandFilter": 9000,
+      "ClusterCount": 18,
+      "DemandBearingClusters": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ],
+      "Summary": [
+        {
+          "Method": "EV",
+          "PooledMeanCost": 100562.10560185184,
+          "PooledStdCost": 43211.28334833449,
+          "PooledMedianCost": 111595.73333333332,
+          "AcrossRunMeanOfRunMeans": 100562.10560185186,
+          "AcrossRunStdOfRunMeans": 55.120487120625256,
+          "ClusterBootstrapCi95Lower": 80679.99925115742,
+          "ClusterBootstrapCi95Upper": 119338.07564467593
+        },
+        {
+          "Method": "SAA",
+          "PooledMeanCost": 99894.125,
+          "PooledStdCost": 42925.80297738973,
+          "PooledMedianCost": 110411.5,
+          "AcrossRunMeanOfRunMeans": 99894.125,
+          "AcrossRunStdOfRunMeans": 77.43555617260682,
+          "ClusterBootstrapCi95Lower": 79830.50145833334,
+          "ClusterBootstrapCi95Upper": 120269.60993055554
+        },
+        {
+          "Method": "DRO",
+          "PooledMeanCost": 99709.388559101,
+          "PooledStdCost": 42870.596362379205,
+          "PooledMedianCost": 109882.825,
+          "AcrossRunMeanOfRunMeans": 99709.388559101,
+          "AcrossRunStdOfRunMeans": 113.72334302011183,
+          "ClusterBootstrapCi95Lower": 79986.21681196021,
+          "ClusterBootstrapCi95Upper": 118754.61059334969
+        }
+      ],
+      "Comparative": [
+        {
+          "Comparison": "DRO_vs_EV",
+          "PooledMeanReductionPercent": 0.8479506645644036,
+          "ReductionCi95Lower": 0.049465980975787006,
+          "ReductionCi95Upper": 1.5982177509868516,
+          "ClusterWilcoxonP": 0.033267974853515625,
+          "ClusterCohenR": 0.43625898368769056,
+          "ClusterZ": 1.8508901143147043,
+          "ClusterN": 18,
+          "ClustersDroCheaper": 12,
+          "ClustersTotal": 18
+        },
+        {
+          "Comparison": "DRO_vs_SAA",
+          "PooledMeanReductionPercent": 0.18493223790588828,
+          "ReductionCi95Lower": -0.0185120206971103,
+          "ReductionCi95Upper": 0.37947031187786073,
+          "ClusterWilcoxonP": 0.06486892700195312,
+          "ClusterCohenR": 0.3644045628450121,
+          "ClusterZ": 1.5460376248981647,
+          "ClusterN": 18,
+          "ClustersDroCheaper": 11,
+          "ClustersTotal": 18
+        }
+      ],
+      "PerRunClusterTests": [
+        {
+          "Run": 1,
+          "Comparison": "DRO_vs_EV",
+          "ClusterWilcoxonP": 0.026927947998046875,
+          "ClusterCohenR": 0.4567888182141701,
+          "ClusterZ": 1.9379908255765728,
+          "ClusterN": 18,
+          "ClustersDroCheaper": 12,
+          "ClustersTotal": 18
+        },
+        {
+          "Run": 1,
+          "Comparison": "DRO_vs_SAA",
+          "ClusterWilcoxonP": 0.033267974853515625,
+          "ClusterCohenR": 0.43625898368769056,
+          "ClusterZ": 1.8508901143147043,
+          "ClusterN": 18,
+          "ClustersDroCheaper": 12,
+          "ClustersTotal": 18
+        },
+        {
+          "Run": 2,
+          "Comparison": "DRO_vs_EV",
+          "ClusterWilcoxonP": 0.04488372802734375,
+          "ClusterCohenR": 0.4054642318979712,
+          "ClusterZ": 1.7202390474219016,
+          "ClusterN": 18,
+          "ClustersDroCheaper": 11,
+          "ClustersTotal": 18
+        },
+        {
+          "Run": 2,
+          "Comparison": "DRO_vs_SAA",
+          "ClusterWilcoxonP": 0.11437606811523438,
+          "ClusterCohenR": 0.29255014200233365,
+          "ClusterZ": 1.2411851354816252,
+          "ClusterN": 18,
+          "ClustersDroCheaper": 11,
+          "ClustersTotal": 18
+        },
+        {
+          "Run": 3,
+          "Comparison": "DRO_vs_EV",
+          "ClusterWilcoxonP": 0.024139404296875,
+          "ClusterCohenR": 0.4670537354774099,
+          "ClusterZ": 1.981541181207507,
+          "ClusterN": 18,
+          "ClustersDroCheaper": 12,
+          "ClustersTotal": 18
+        },
+        {
+          "Run": 3,
+          "Comparison": "DRO_vs_SAA",
+          "ClusterWilcoxonP": 0.040714263916015625,
+          "ClusterCohenR": 0.415729149161211,
+          "ClusterZ": 1.7637894030528358,
+          "ClusterN": 18,
+          "ClustersDroCheaper": 12,
+          "ClustersTotal": 18
+        },
+        {
+          "Run": 4,
+          "Comparison": "DRO_vs_EV",
+          "ClusterWilcoxonP": 0.04488372802734375,
+          "ClusterCohenR": 0.4054642318979712,
+          "ClusterZ": 1.7202390474219016,
+          "ClusterN": 18,
+          "ClustersDroCheaper": 12,
+          "ClustersTotal": 18
+        },
+        {
+          "Run": 4,
+          "Comparison": "DRO_vs_SAA",
+          "ClusterWilcoxonP": 0.22114944458007812,
+          "ClusterCohenR": 0.1899009693699359,
+          "ClusterZ": 0.805681579172283,
+          "ClusterN": 18,
+          "ClustersDroCheaper": 9,
+          "ClustersTotal": 18
+        },
+        {
+          "Run": 5,
+          "Comparison": "DRO_vs_EV",
+          "ClusterWilcoxonP": 0.059352874755859375,
+          "ClusterCohenR": 0.37466948010825185,
+          "ClusterZ": 1.5895879805290989,
+          "ClusterN": 18,
+          "ClustersDroCheaper": 11,
+          "ClustersTotal": 18
+        },
+        {
+          "Run": 5,
+          "Comparison": "DRO_vs_SAA",
+          "ClusterWilcoxonP": 0.20855712890625,
+          "ClusterCohenR": 0.20016588663317567,
+          "ClusterZ": 0.8492319348032172,
+          "ClusterN": 18,
+          "ClustersDroCheaper": 10,
+          "ClustersTotal": 18
+        }
+      ],
+      "PerRunMeans": {
+        "EV": [
+          100580.81041666666,
+          100570.08032407408,
+          100488.11782407408,
+          100535.03310185186,
+          100636.48634259259
+        ],
+        "SAA": [
+          99916.80555555556,
+          99916.47916666667,
+          99801.45833333333,
+          99836.54861111111,
+          99999.33333333333
+        ],
+        "DRO": [
+          99636.50663029101,
+          99710.99829695768,
+          99573.47578197946,
+          99756.04889183237,
+          99869.91319444448
+        ]
+      },
+      "Audit": [
+        {
+          "Metric": "PooledObservationsBeforeZeroDemandFilter",
+          "Value": 9000.0
+        },
+        {
+          "Metric": "ExcludedZeroDemandClusters",
+          "Value": "None"
+        },
+        {
+          "Metric": "PooledObservationsAfterZeroDemandFilter",
+          "Value": 9000.0
+        },
+        {
+          "Metric": "PostRebalancingInventoryMinimum",
+          "Value": 0.0
+        },
+        {
+          "Metric": "WorstCapacityUtilizationRatio",
+          "Value": 57.714285714285715
+        },
+        {
+          "Metric": "MeanDepotSourcedVehicles_EV",
+          "Value": 19433.1462962963
+        },
+        {
+          "Metric": "MeanUnmetCostSharePercent_EV",
+          "Value": 22.70189917792722
+        },
+        {
+          "Metric": "MeanFirstStageCostSharePercent_EV",
+          "Value": 77.29810082207278
+        },
+        {
+          "Metric": "MeanUnmetVehiclesPerScenario_EV",
+          "Value": 1826.3616333333332
+        },
+        {
+          "Metric": "MeanDepotSourcedVehicles_SAA",
+          "Value": 19788.17777777778
+        },
+        {
+          "Metric": "MeanUnmetCostSharePercent_SAA",
+          "Value": 20.763362152645506
+        },
+        {
+          "Metric": "MeanFirstStageCostSharePercent_SAA",
+          "Value": 79.23663784735449
+        },
+        {
+          "Metric": "MeanUnmetVehiclesPerScenario_SAA",
+          "Value": 1659.313111111111
+        },
+        {
+          "Metric": "MeanDepotSourcedVehicles_DRO",
+          "Value": 19916.667244543118
+        },
+        {
+          "Metric": "MeanUnmetCostSharePercent_DRO",
+          "Value": 20.101051546222124
+        },
+        {
+          "Metric": "MeanFirstStageCostSharePercent_DRO",
+          "Value": 79.89894845377788
+        },
+        {
+          "Metric": "MeanUnmetVehiclesPerScenario_DRO",
+          "Value": 1603.417566474282
+        }
+      ],
+      "WassersteinShiftIndex": 4203.045962962962,
+      "NormalizedL1ShiftIndex": 0.1973055586394611
+    }
+  }
+}

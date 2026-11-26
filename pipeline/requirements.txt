@@ -1,0 +1,26 @@
+# ---------------------------------------------------------------------------
+# Pinned environment for the DRO micro-mobility rebalancing pipeline (v5).
+# Install with:  python3 -m pip install -r requirements.txt
+# Python >= 3.10 is required.
+# ---------------------------------------------------------------------------
+
+# PuLP - LP modelling layer used by Phase2DroModel.py.
+PuLP
+
+# HiGHS - fast LP/MILP solver that PuLP calls via getSolver("HiGHS").
+highspy
+
+# Numerical stack.
+numpy<2
+scipy
+
+# Visualization stack (Phase5Visualization + Phase6MultiRunAggregator).
+matplotlib
+seaborn
+folium
+
+# Graph / network utilities (used for spatial coherence and cluster helpers).
+networkx
+
+# Tabular data handling.
+pandas

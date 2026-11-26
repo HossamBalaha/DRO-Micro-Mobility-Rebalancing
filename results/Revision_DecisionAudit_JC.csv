@@ -1,0 +1,18 @@
+Metric,Value
+PooledObservationsBeforeZeroDemandFilter,5000.0
+ExcludedZeroDemandClusters,"8, 9, 10"
+PooledObservationsAfterZeroDemandFilter,3500.0
+PostRebalancingInventoryMinimum,-3.0375701953744283e-13
+WorstCapacityUtilizationRatio,51.8
+MeanDepotSourcedVehicles_EV,3495.0453333333335
+MeanUnmetCostSharePercent_EV,16.84691746213108
+MeanFirstStageCostSharePercent_EV,83.15308253786891
+MeanUnmetVehiclesPerScenario_EV,323.8868476190476
+MeanDepotSourcedVehicles_SAA,3579.12
+MeanUnmetCostSharePercent_SAA,14.146928288553514
+MeanFirstStageCostSharePercent_SAA,85.85307171144649
+MeanUnmetVehiclesPerScenario_SAA,269.79342857142854
+MeanDepotSourcedVehicles_DRO,3622.1133333333337
+MeanUnmetCostSharePercent_DRO,12.893835352098796
+MeanFirstStageCostSharePercent_DRO,87.10616464790121
+MeanUnmetVehiclesPerScenario_DRO,245.29112034632044
